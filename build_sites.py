@@ -28,76 +28,6 @@ INLINE_SLOTS = [
 GLOBAL_SLOTS = ["popunder", "social_bar", "in_page_push"]
 ALL_SLOTS = INLINE_SLOTS + GLOBAL_SLOTS
 
-B_HOST = "bauval" + "." + "org"
-A_HOST = "abscloud" + "." + "org"
-
-DEFAULT_WORLD_ADS = {
-    "banner_300x250": f"""<script>
-  atOptions = {{
-    'key' : '755fb3e29d1681dc4c5a962229d5b139',
-    'format' : 'iframe',
-    'height' : 250,
-    'width' : 300,
-    'params' : {{}}
-  }};
-</script>
-<script src="https://{B_HOST}/22/755fb3e29d1681dc4c5a962229d5b139"></script>""",
-    "banner_728x90": f"""<script>
-  atOptions = {{
-    'key' : '9dbe511f25950d15216f7b4041fe5147',
-    'format' : 'iframe',
-    'height' : 90,
-    'width' : 728,
-    'params' : {{}}
-  }};
-</script>
-<script src="https://{B_HOST}/22/9dbe511f25950d15216f7b4041fe5147"></script>""",
-    "banner_320x50": f"""<script>
-  atOptions = {{
-    'key' : '877fc421d96cd4e6bd274c893ca69fb1',
-    'format' : 'iframe',
-    'height' : 50,
-    'width' : 320,
-    'params' : {{}}
-  }};
-</script>
-<script src="https://{B_HOST}/22/877fc421d96cd4e6bd274c893ca69fb1"></script>""",
-    "banner_468x60": f"""<script>
-  atOptions = {{
-    'key' : 'af982a20140c8e584a3dc97cfdde2d27',
-    'format' : 'iframe',
-    'height' : 60,
-    'width' : 468,
-    'params' : {{}}
-  }};
-</script>
-<script src="https://{B_HOST}/22/af982a20140c8e584a3dc97cfdde2d27"></script>""",
-    "banner_160x300": f"""<script>
-  atOptions = {{
-    'key' : '5cd810b4e41913729f223cab6e6420d7',
-    'format' : 'iframe',
-    'height' : 300,
-    'width' : 160,
-    'params' : {{}}
-  }};
-</script>
-<script src="https://{B_HOST}/22/5cd810b4e41913729f223cab6e6420d7"></script>""",
-    "banner_160x600": f"""<script>
-  atOptions = {{
-    'key' : '98f65f43b29a2d9d4e9771bf2511c037',
-    'format' : 'iframe',
-    'height' : 600,
-    'width' : 160,
-    'params' : {{}}
-  }};
-</script>
-<script src="https://{B_HOST}/22/98f65f43b29a2d9d4e9771bf2511c037"></script>""",
-    "native_banner": f"""<script async="async" data-cfasync="false" src="https://{B_HOST}/21/ea3e1551321654d2c4efcb7588937f56"></script>
-<div id="container-ea3e1551321654d2c4efcb7588937f56"></div>""",
-    "popunder": f"""<script data-cfasync="false" src="https://{A_HOST}/1/53846a5d076b4b34b98c6a99a31759cd"></script>""",
-    "social_bar": f"""<script data-cfasync="false" src="https://{B_HOST}/14/10a88dac3b14668ae24c20eda10e2434"></script>""",
-}
-
 CSS = """
 :root { --brand: BRAND; }
 * { box-sizing: border-box; }
@@ -140,26 +70,23 @@ PAGES = [
 
 
 def load_json(path, default):
-    if Path(path).exists():
-        return json.loads(Path(path).read_text(encoding="utf-8"))
+    path = Path(path)
+    if path.exists():
+        return json.loads(path.read_text(encoding="utf-8"))
     return default
 
 
 def ensure_ads_files(site):
-    """Automatically create ads/<site_id>/<slot>.html folders and files if they don't exist."""
+    """Automatically create ads/<site_id>/<slot>.html folders and files with placeholder only."""
     sid = site["id"]
     site_ads_dir = ADS_DIR / sid
     site_ads_dir.mkdir(parents=True, exist_ok=True)
     for slot in ALL_SLOTS:
         path = site_ads_dir / f"{slot}.html"
         if not path.exists():
-            if sid == "world" and slot in DEFAULT_WORLD_ADS:
-                path.write_text(DEFAULT_WORLD_ADS[slot] + "\n", encoding="utf-8")
-                print(f"  [{sid}] auto-created {path} with default Adsterra code")
-            else:
-                placeholder = f"<!-- Paste your Adsterra '{slot}' code for '{sid}' site here -->\n"
-                path.write_text(placeholder, encoding="utf-8")
-                print(f"  [{sid}] auto-created placeholder {path}")
+            placeholder = f"<!-- Paste your Adsterra '{slot}' code for '{sid}' site here -->\n"
+            path.write_text(placeholder, encoding="utf-8")
+            print(f"  [{sid}] auto-created placeholder {path}")
 
 
 def slot_code(site, slot):
@@ -239,7 +166,7 @@ def placed_inline_ads(site, paragraph_count):
         if not code:
             continue
         after = int(cfg.get("after_paragraph", 1))
-        after = max(1, min(after, paragraph_count))  # never before 1, never past the last paragraph
+        after = max(1, min(after, paragraph_count))
         device = cfg.get("device", "all")
         cls = {"desktop": "desk-only", "mobile": "mob-only"}.get(device, "")
         block = f'<div class="ad-slot {cls}">{code}</div>'
