@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kishansinghh3182-cloud.github.io/news-site-network/sitemap.xml
