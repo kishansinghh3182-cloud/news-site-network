@@ -1,5 +1,19 @@
 [
   {
+    "slug": "20261102-0050-digital-warning-network-compromised-by-false-radiation-alert",
+    "headline": "Digital Warning Network Compromised by False Radiation Alert",
+    "paragraphs": [
+      "A digital alert software system utilized to notify people of impending aerial threats was recently compromised, leading to the distribution of fabricated notices regarding an urgent radiation danger. According to statements released by air force officials, the emergency application appeared to suffer an unauthorized intrusion that directed inaccurate alarm messages onto the mobile devices of individual users. Defense authorities acted quickly to counter the confusion caused by these notices, publicly affirming that no radiological hazard existed and that the warning had been dispatched without legitimate institutional approval.",
+      "In regions enduring persistent conflict, specialized mobile applications represent an essential facet of modern civil defense infrastructure, serving as an immediate connection between defense authorities and the broader population. These digital systems are designed to broadcast rapid safety guidance directly to smartphones, instructing civilians to seek designated shelters or take protective measures against incoming strikes. Because successful protection depends on instant civilian compliance, the entire framework is predicated on unwavering public confidence; an unauthorized digital intrusion compromises that relationship by turning a protective mechanism into a potential source of disruption.",
+      "Fabricated alarms involving radiological threats carry acute psychological resonance, as such hazards represent catastrophic dangers that demand extreme caution and immediate lifestyle disruption. Following the distribution of the bogus notification, administrative authorities urged members of the public to remain calm and avoid circulating unofficial claims. Leadership explicitly emphasized that people must consult authenticated government communication streams for dependable updates, noting that cyber manipulation of emergency channels threatens to obscure critical real-time guidance, trigger widespread disorder, and erode trust in national alert platforms.",
+      "Moving forward, observers and global audiences will likely monitor how cybersecurity teams work to fortify these emergency notification systems against unauthorized tampering, while watching for further measures taken by public safety agencies to verify the integrity of subsequent civil defense alerts."
+    ],
+    "date": "02 Nov 2026",
+    "iso": "2026-11-02T00:50:22.848285+00:00",
+    "source_name": "BBC News",
+    "source_url": "https://www.bbc.co.uk/news/articles/c51kdy1ew7zvo?at_medium=RSS&at_campaign=rss"
+  },
+  {
     "slug": "20261101-2030-power-outages-hit-thousands-in-ukraine-as-humanitarian-truce",
     "headline": "Power Outages Hit Thousands in Ukraine as Humanitarian Truce in Kherson Reaches Its End",
     "paragraphs": [
