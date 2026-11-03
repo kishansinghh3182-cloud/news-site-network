@@ -1,5 +1,19 @@
 [
   {
+    "slug": "20261103-1650-massive-uk-data-centres-threaten-national-climate-targets-wi",
+    "headline": "Massive UK Data Centres Threaten National Climate Targets With Gas Power Plans",
+    "paragraphs": [
+      "Four massive computing facilities slated for development in Britain are currently weighing the use of gas-fired electricity to meet their massive power demands. These upcoming installations, categorized as hyperscale data centres, require immense amounts of energy to run continuously. Because connecting to the standard electrical grid can take years of waiting, the developers behind these sites are exploring independent fossil fuel power sources to get their operations running sooner.",
+      "Data centres function as the physical backbone of modern digital infrastructure, housing thousands of networked computer servers that process and store information for internet services, cloud computing, and artificial intelligence applications. These specialized facilities generate substantial heat and require constant electricity not only for the computing hardware itself, but also for heavy-duty cooling systems needed to prevent overheating. As reliance on digital platforms and automated technologies expands rapidly worldwide, the demand for this specialized real estate has surged.",
+      "The decision to potentially rely on gas-fired generation matters because burning natural gas releases carbon dioxide, which directly conflicts with national environmental strategies. The United Kingdom has established strict legal commitments to reduce its greenhouse gas emissions and reach a state of net-zero pollution. Introducing new fossil fuel electricity generators on this scale could significantly increase domestic carbon output, making it much harder for the country to achieve its legally mandated climate milestones.",
+      "Observers and policymakers will be monitoring upcoming planning applications and energy sector decisions to see how these power needs are ultimately addressed."
+    ],
+    "date": "03 Nov 2026",
+    "iso": "2026-11-03T16:50:21.800645+00:00",
+    "source_name": "BBC News",
+    "source_url": "https://www.bbc.co.uk/news/articles/cqvgrvx6ekl2o?at_medium=RSS&at_campaign=rss"
+  },
+  {
     "slug": "20261103-1323-uk-government-launches-first-nationwide-study-on-forever-che",
     "headline": "UK Government Launches First Nationwide Study on Forever Chemicals",
     "paragraphs": [
