@@ -1,5 +1,19 @@
 [
   {
+    "slug": "20261109-1702-digital-sabotage-france-accuses-iran-of-heating-supermarket-",
+    "headline": "Digital Sabotage: France Accuses Iran of Heating Supermarket Coolers",
+    "paragraphs": [
+      "French officials have formally attributed a widespread electronic sabotage campaign to Iran after digital attackers tampered with food preservation systems nationwide. The security breach, which unfolded during the previous month, compromised refrigeration networks functioning within hundreds of supermarkets throughout France. Rather than merely shutting down the electrical flow to these storage spaces, the remote operators deliberately manipulated the environmental controls. As a result, both standard chillers and deep-freeze containers experienced abnormal increases in temperature, directly affecting retail storage environments across a wide territory.",
+      "The incident highlights the operational vulnerabilities associated with modern automated retail facilities. Most large-scale grocery providers utilize centralized, networked monitoring platforms to oversee their climate-controlled appliances. These internet-enabled management tools permit engineers to monitor energy usage, maintain correct storage conditions, and calibrate internal settings from a distance. Industrial heating and cooling mechanisms, once viewed as isolated mechanical assets, are now deeply integrated into broad digital networks. While this connectivity improves efficiency across commercial facilities, it simultaneously introduces pathways through which external actors can influence physical equipment, transforming ordinary commercial appliances into focal points of international tension.",
+      "The matter is significant because it illustrates how state-attributed cyber activities can target the everyday supply chains that supply consumers with essential goods. When industrial refrigeration units are unexpectedly heated, the integrity of chilled and frozen food inventory is immediately called into question, as food preservation depends on maintaining uninterrupted cold chains. Such disruptions force grocers to inspect compromised stock, undertake sanitation procedures, and reconfigure their distribution processes to prevent spoiled goods from reaching the public. Consequently, incidents of this nature demonstrate that foreign digital operations can quickly cause tangible, physical consequences for domestic retail markets.",
+      "In the coming months, observers will be watching how diplomatic relations between the two governments unfold following the public accusation, as well as whether regulatory authorities recommend tighter digital defenses for private commercial systems."
+    ],
+    "date": "09 Nov 2026",
+    "iso": "2026-11-09T17:02:44.975488+00:00",
+    "source_name": "BBC News",
+    "source_url": "https://www.bbc.co.uk/news/articles/cmg474vk6dyqo?at_medium=RSS&at_campaign=rss"
+  },
+  {
     "slug": "20261109-1305-the-dangerous-exploitation-of-minors-in-france-s-narcotics-u",
     "headline": "The Dangerous Exploitation of Minors in France's Narcotics Underworld",
     "paragraphs": [
