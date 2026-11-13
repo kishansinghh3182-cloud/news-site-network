@@ -1,5 +1,19 @@
 [
   {
+    "slug": "20261113-1255-global-microsoft-outage-sparks-disruption-as-recovery-effort",
+    "headline": "Global Microsoft Outage Sparks Disruption as Recovery Efforts Continue",
+    "paragraphs": [
+      "A widespread technical failure affecting Microsoft systems has disrupted operations globally, leaving organizations struggling to restore functionality. Company representatives have confirmed that the incident is unrelated to any malicious cyber-security attack, though attempts to resolve the system errors and return to normal operations have not yet achieved significant success.",
+      "The sudden disruption has impacted a wide array of digital infrastructure supported by Microsoft, creating operational challenges for businesses and public services alike. Because modern organizations rely heavily on integrated software platforms to manage daily tasks, widespread system failures of this scale can quickly cascade into significant logistical delays.",
+      "While technical teams work to understand the root cause and deploy patches, the reliance on centralized cloud and software services highlights the vulnerability of interconnected digital networks. Incidents like this draw attention to how quickly modern commerce and communication can be affected when major technology providers experience unexpected technical difficulties.",
+      "Observers and users worldwide will likely be monitoring official updates from the company to see how quickly the technical glitches are resolved and what measures are implemented to prevent similar disruptions in the future."
+    ],
+    "date": "13 Nov 2026",
+    "iso": "2026-11-13T12:55:46.432775+00:00",
+    "source_name": "BBC News",
+    "source_url": "https://www.bbc.co.uk/news/articles/cwvg238zrnm5o?at_medium=RSS&at_campaign=rss"
+  },
+  {
     "slug": "20261113-0858-fbi-blames-north-korean-hackers-for-massive-video-call-crypt",
     "headline": "FBI Blames North Korean Hackers for Massive Video Call Crypto Scam",
     "paragraphs": [
