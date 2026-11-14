@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hilarious-nasturtium-c9f7f9.netlify.app/sitemap.xml
